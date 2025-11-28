@@ -16,7 +16,7 @@ function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-20 border-b border-slate-800 bg-gradient-to-b from-kalakaPurple to-slate-950 backdrop-blur">
+    <header className="sticky top-0 z-20 border-b border-slate-700 bg-slate-950/95 backdrop-blur">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
         <Link to="/" className="flex items-center gap-2">
           {Logo && (
@@ -56,7 +56,7 @@ function Navbar() {
         </button>
       </div>
       {mobileMenuOpen && (
-        <nav className="md:hidden border-t border-slate-800 bg-kalakaPurple">
+        <nav className="md:hidden border-t border-slate-800 bg-slate-900">
           {navItems.map((item) => (
             <Link
               key={item.to}

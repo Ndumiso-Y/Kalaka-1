@@ -25,7 +25,7 @@ const features = [
 
 function ValueAddSection() {
   return (
-    <section className="border-b border-slate-800 bg-kalakaPurple px-4 py-16">
+    <section className="border-b border-slate-800 bg-slate-900 px-4 py-16">
       <div className="mx-auto max-w-7xl">
         <div className="text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-kalakaGold">
@@ -40,7 +40,7 @@ function ValueAddSection() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="rounded-lg border border-kalakaPurple/60 bg-kalakaPurple/60 p-6 backdrop-blur-sm transition hover:border-kalakaGold/50"
+              className="rounded-lg border border-slate-700 bg-slate-950/80 p-6 backdrop-blur-sm transition hover:border-kalakaGold/50"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-kalakaGold/20 text-kalakaGold">
                 <span className="text-xl font-bold">{feature.initial}</span>

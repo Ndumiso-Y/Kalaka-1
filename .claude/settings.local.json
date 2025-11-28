@@ -5,7 +5,12 @@
       "Bash(npm install:*)",
       "Bash(npm run dev:*)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfeat: implement Kalaka South Mining multi-page website with React Router\n\n- Converted single-page app to multi-page with React Router\n- Created separate pages for each section (Home, About, Fertilizers, Supply Chain, Value Add, Leadership, Contact)\n- Implemented full UI with real images from assets\n- Added responsive navbar with mobile hamburger menu\n- Created comprehensive fertilizer portfolio with product cards\n- Built supply chain timeline with logistics images\n- Added leadership section with expandable bios\n- Implemented RFQ contact form with product selection\n- Refined color system (reduced purple dominance, using slate-950 base)\n- All images loading from src/assets/images\n- Mobile-responsive design throughout\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(git remote add:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []

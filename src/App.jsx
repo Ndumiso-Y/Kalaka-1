@@ -12,7 +12,7 @@ import ContactPage from './pages/ContactPage.jsx';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Kalaka-1">
       <div className="min-h-screen bg-slate-950 text-slate-100">
         <Navbar />
         <main>

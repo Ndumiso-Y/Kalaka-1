@@ -12,7 +12,8 @@
       "Bash(git push:*)",
       "Bash(git commit:*)",
       "Bash(dir public)",
-      "Bash(del .githubworkflowsdeploy.yml)"
+      "Bash(del .githubworkflowsdeploy.yml)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []

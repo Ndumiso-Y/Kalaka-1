@@ -24,16 +24,16 @@ const productGroups = [
 
 function FertilizerPortfolioSection() {
   return (
-    <section className="border-b border-slate-800 bg-slate-900 px-4 py-16">
+    <section className="border-b border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-900 px-4 py-16">
       <div className="mx-auto max-w-7xl">
         <div className="text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-kalakaGold">
             FERTILIZER PORTFOLIO
           </p>
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-bold sm:text-4xl text-slate-900 dark:text-slate-100">
             Full Range of Nitrogen & Phosphate Fertilizers
           </h2>
-          <p className="mx-auto mt-6 max-w-3xl text-lg text-slate-300">
+          <p className="mx-auto mt-6 max-w-3xl text-lg text-slate-600 dark:text-slate-300">
             We supply a comprehensive portfolio of fertilizer products to blenders, wholesalers,
             and distributors across Africa. Our sourcing network ensures competitive pricing and
             reliable availability year-round.
@@ -68,23 +68,23 @@ function FertilizerPortfolioSection() {
           {productGroups.map((group, index) => (
             <div
               key={index}
-              className="rounded-lg border border-slate-700 bg-slate-50 p-6"
+              className="rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-950 p-6"
             >
-              <h3 className="text-xl font-bold text-slate-900">{group.category}</h3>
+              <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100">{group.category}</h3>
               <ul className="mt-4 space-y-2">
                 {group.products.map((product, idx) => (
-                  <li key={idx} className="flex items-start text-slate-700">
+                  <li key={idx} className="flex items-start text-slate-700 dark:text-slate-300">
                     <span className="mr-2 text-kalakaGold">•</span>
                     <span className="text-sm">{product}</span>
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-xs text-slate-500">
+              <p className="mt-4 text-xs text-slate-500 dark:text-slate-400">
                 <strong>Packaging:</strong> {group.packaging}
               </p>
               <Link
                 to="/contact"
-                className="mt-4 inline-block text-sm font-semibold text-kalakaPurple hover:text-kalakaGold transition"
+                className="mt-4 inline-block text-sm font-semibold text-kalakaPurple dark:text-kalakaGold hover:text-kalakaGold transition"
               >
                 Enquire →
               </Link>

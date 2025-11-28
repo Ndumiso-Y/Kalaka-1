@@ -48,36 +48,36 @@ function ContactSection() {
   };
 
   return (
-    <section className="border-b border-slate-800 bg-slate-950 px-4 py-16">
+    <section className="border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 px-4 py-16">
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-12 lg:grid-cols-2">
           <div>
-            <h2 className="text-3xl font-bold sm:text-4xl">Request a Supply Proposal</h2>
-            <p className="mt-4 text-lg text-slate-300">
+            <h2 className="text-3xl font-bold sm:text-4xl text-slate-900 dark:text-slate-100">Request a Supply Proposal</h2>
+            <p className="mt-4 text-lg text-slate-600 dark:text-slate-300">
               We work with blenders, wholesalers, traders, and distributors across Africa to
               deliver reliable fertilizer supply solutions.
             </p>
-            <div className="mt-8 space-y-4 text-slate-300">
+            <div className="mt-8 space-y-4 text-slate-700 dark:text-slate-300">
               <p>
                 <strong className="text-kalakaGold">Email:</strong>{' '}
-                <span className="text-slate-400">info@kalakasouth.com</span>
+                <span className="text-slate-600 dark:text-slate-400">info@kalakasouth.com</span>
               </p>
               <p>
                 <strong className="text-kalakaGold">Phone:</strong>{' '}
-                <span className="text-slate-400">+27 (0) 11 123 4567</span>
+                <span className="text-slate-600 dark:text-slate-400">+27 (0) 11 123 4567</span>
               </p>
               <p>
                 <strong className="text-kalakaGold">Location:</strong>{' '}
-                <span className="text-slate-400">Johannesburg, South Africa</span>
+                <span className="text-slate-600 dark:text-slate-400">Johannesburg, South Africa</span>
               </p>
             </div>
           </div>
 
-          <div className="rounded-lg border border-slate-700 bg-slate-900 p-8">
+          <div className="rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-900 p-8">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-semibold text-slate-200">
+                  <label htmlFor="name" className="block text-sm font-semibold text-slate-700 dark:text-slate-200">
                     Name *
                   </label>
                   <input
@@ -87,11 +87,11 @@ function ContactSection() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="mt-1 w-full rounded-md border border-slate-700 bg-slate-950 px-4 py-2 text-slate-100 focus:border-kalakaGold focus:outline-none focus:ring-1 focus:ring-kalakaGold"
+                    className="mt-1 w-full rounded-md border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 px-4 py-2 text-slate-900 dark:text-slate-100 focus:border-kalakaGold focus:outline-none focus:ring-1 focus:ring-kalakaGold"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-slate-200">
+                  <label htmlFor="email" className="block text-sm font-semibold text-slate-700 dark:text-slate-200">
                     Email *
                   </label>
                   <input
@@ -101,14 +101,14 @@ function ContactSection() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="mt-1 w-full rounded-md border border-slate-700 bg-slate-950 px-4 py-2 text-slate-100 focus:border-kalakaGold focus:outline-none focus:ring-1 focus:ring-kalakaGold"
+                    className="mt-1 w-full rounded-md border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 px-4 py-2 text-slate-900 dark:text-slate-100 focus:border-kalakaGold focus:outline-none focus:ring-1 focus:ring-kalakaGold"
                   />
                 </div>
               </div>
 
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
-                  <label htmlFor="company" className="block text-sm font-semibold text-slate-200">
+                  <label htmlFor="company" className="block text-sm font-semibold text-slate-700 dark:text-slate-200">
                     Company *
                   </label>
                   <input
@@ -118,11 +118,11 @@ function ContactSection() {
                     required
                     value={formData.company}
                     onChange={handleChange}
-                    className="mt-1 w-full rounded-md border border-slate-700 bg-slate-950 px-4 py-2 text-slate-100 focus:border-kalakaGold focus:outline-none focus:ring-1 focus:ring-kalakaGold"
+                    className="mt-1 w-full rounded-md border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 px-4 py-2 text-slate-900 dark:text-slate-100 focus:border-kalakaGold focus:outline-none focus:ring-1 focus:ring-kalakaGold"
                   />
                 </div>
                 <div>
-                  <label htmlFor="role" className="block text-sm font-semibold text-slate-200">
+                  <label htmlFor="role" className="block text-sm font-semibold text-slate-700 dark:text-slate-200">
                     Role *
                   </label>
                   <input
@@ -132,14 +132,14 @@ function ContactSection() {
                     required
                     value={formData.role}
                     onChange={handleChange}
-                    className="mt-1 w-full rounded-md border border-slate-700 bg-slate-950 px-4 py-2 text-slate-100 focus:border-kalakaGold focus:outline-none focus:ring-1 focus:ring-kalakaGold"
+                    className="mt-1 w-full rounded-md border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 px-4 py-2 text-slate-900 dark:text-slate-100 focus:border-kalakaGold focus:outline-none focus:ring-1 focus:ring-kalakaGold"
                   />
                 </div>
               </div>
 
               <div className="grid gap-4 sm:grid-cols-2">
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-semibold text-slate-200">
+                  <label htmlFor="phone" className="block text-sm font-semibold text-slate-700 dark:text-slate-200">
                     Phone
                   </label>
                   <input
@@ -148,11 +148,11 @@ function ContactSection() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="mt-1 w-full rounded-md border border-slate-700 bg-slate-950 px-4 py-2 text-slate-100 focus:border-kalakaGold focus:outline-none focus:ring-1 focus:ring-kalakaGold"
+                    className="mt-1 w-full rounded-md border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 px-4 py-2 text-slate-900 dark:text-slate-100 focus:border-kalakaGold focus:outline-none focus:ring-1 focus:ring-kalakaGold"
                   />
                 </div>
                 <div>
-                  <label htmlFor="country" className="block text-sm font-semibold text-slate-200">
+                  <label htmlFor="country" className="block text-sm font-semibold text-slate-700 dark:text-slate-200">
                     Country
                   </label>
                   <input
@@ -161,25 +161,25 @@ function ContactSection() {
                     name="country"
                     value={formData.country}
                     onChange={handleChange}
-                    className="mt-1 w-full rounded-md border border-slate-700 bg-slate-950 px-4 py-2 text-slate-100 focus:border-kalakaGold focus:outline-none focus:ring-1 focus:ring-kalakaGold"
+                    className="mt-1 w-full rounded-md border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 px-4 py-2 text-slate-900 dark:text-slate-100 focus:border-kalakaGold focus:outline-none focus:ring-1 focus:ring-kalakaGold"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-slate-200">
+                <label className="block text-sm font-semibold text-slate-700 dark:text-slate-200">
                   Product Interest
                 </label>
                 <div className="mt-2 grid grid-cols-2 gap-2 sm:grid-cols-3">
                   {products.map((product) => (
-                    <label key={product} className="flex items-center text-sm text-slate-300">
+                    <label key={product} className="flex items-center text-sm text-slate-700 dark:text-slate-300">
                       <input
                         type="checkbox"
                         name="products"
                         value={product}
                         checked={formData.products.includes(product)}
                         onChange={handleChange}
-                        className="mr-2 rounded border-slate-700 bg-slate-950 text-kalakaGold focus:ring-kalakaGold"
+                        className="mr-2 rounded border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 text-kalakaGold focus:ring-kalakaGold"
                       />
                       {product}
                     </label>
@@ -188,7 +188,7 @@ function ContactSection() {
               </div>
 
               <div>
-                <label htmlFor="volume" className="block text-sm font-semibold text-slate-200">
+                <label htmlFor="volume" className="block text-sm font-semibold text-slate-700 dark:text-slate-200">
                   Approximate Annual Volume
                 </label>
                 <select
@@ -196,7 +196,7 @@ function ContactSection() {
                   name="volume"
                   value={formData.volume}
                   onChange={handleChange}
-                  className="mt-1 w-full rounded-md border border-slate-700 bg-slate-950 px-4 py-2 text-slate-100 focus:border-kalakaGold focus:outline-none focus:ring-1 focus:ring-kalakaGold"
+                  className="mt-1 w-full rounded-md border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 px-4 py-2 text-slate-900 dark:text-slate-100 focus:border-kalakaGold focus:outline-none focus:ring-1 focus:ring-kalakaGold"
                 >
                   <option value="">Select range</option>
                   <option value="<1000">Less than 1,000 tons</option>
@@ -208,7 +208,7 @@ function ContactSection() {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-semibold text-slate-200">
+                <label htmlFor="message" className="block text-sm font-semibold text-slate-700 dark:text-slate-200">
                   Message
                 </label>
                 <textarea
@@ -217,7 +217,7 @@ function ContactSection() {
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
-                  className="mt-1 w-full rounded-md border border-slate-700 bg-slate-950 px-4 py-2 text-slate-100 focus:border-kalakaGold focus:outline-none focus:ring-1 focus:ring-kalakaGold"
+                  className="mt-1 w-full rounded-md border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-950 px-4 py-2 text-slate-900 dark:text-slate-100 focus:border-kalakaGold focus:outline-none focus:ring-1 focus:ring-kalakaGold"
                 ></textarea>
               </div>
 

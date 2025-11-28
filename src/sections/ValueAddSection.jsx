@@ -25,13 +25,13 @@ const features = [
 
 function ValueAddSection() {
   return (
-    <section className="border-b border-slate-800 bg-slate-900 px-4 py-16">
+    <section className="border-b border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-900 px-4 py-16">
       <div className="mx-auto max-w-7xl">
         <div className="text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-kalakaGold">
             WHY KALAKA?
           </p>
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-bold sm:text-4xl text-slate-900 dark:text-slate-100">
             Security of Supply & African Expertise
           </h2>
         </div>
@@ -40,13 +40,13 @@ function ValueAddSection() {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="rounded-lg border border-slate-700 bg-slate-950/80 p-6 backdrop-blur-sm transition hover:border-kalakaGold/50"
+              className="rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-950/80 p-6 backdrop-blur-sm transition hover:border-kalakaGold/50"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-kalakaGold/20 text-kalakaGold">
                 <span className="text-xl font-bold">{feature.initial}</span>
               </div>
-              <h3 className="mt-4 text-lg font-bold text-slate-100">{feature.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-300">{feature.description}</p>
+              <h3 className="mt-4 text-lg font-bold text-slate-900 dark:text-slate-100">{feature.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600 dark:text-slate-300">{feature.description}</p>
             </div>
           ))}
         </div>

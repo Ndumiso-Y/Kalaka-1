@@ -43,13 +43,13 @@ function LeadershipSection() {
   const [expandedIndex, setExpandedIndex] = useState(null);
 
   return (
-    <section className="border-b border-slate-800 bg-slate-900 px-4 py-16">
+    <section className="border-b border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-900 px-4 py-16">
       <div className="mx-auto max-w-7xl">
         <div className="text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-kalakaGold">
             LEADERSHIP
           </p>
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-bold sm:text-4xl text-slate-900 dark:text-slate-100">
             Experienced Management Team
           </h2>
         </div>
@@ -58,7 +58,7 @@ function LeadershipSection() {
           {leaders.map((leader, index) => (
             <div
               key={index}
-              className="rounded-lg border border-slate-700 bg-slate-950 p-6"
+              className="rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-950 p-6"
             >
               <div className="overflow-hidden rounded-lg">
                 <img
@@ -67,18 +67,18 @@ function LeadershipSection() {
                   className="h-64 w-full object-cover"
                 />
               </div>
-              <h3 className="mt-4 text-xl font-bold text-slate-100">{leader.name}</h3>
+              <h3 className="mt-4 text-xl font-bold text-slate-900 dark:text-slate-100">{leader.name}</h3>
               <p className="text-sm font-semibold text-kalakaGold">{leader.role}</p>
               <ul className="mt-4 space-y-2">
                 {leader.highlights.map((highlight, idx) => (
-                  <li key={idx} className="flex items-start text-sm text-slate-300">
+                  <li key={idx} className="flex items-start text-sm text-slate-600 dark:text-slate-300">
                     <span className="mr-2 text-kalakaGold">•</span>
                     {highlight}
                   </li>
                 ))}
               </ul>
               {expandedIndex === index && (
-                <p className="mt-4 text-sm leading-relaxed text-slate-400">{leader.bio}</p>
+                <p className="mt-4 text-sm leading-relaxed text-slate-500 dark:text-slate-400">{leader.bio}</p>
               )}
               <button
                 onClick={() => setExpandedIndex(expandedIndex === index ? null : index)}

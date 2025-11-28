@@ -38,16 +38,16 @@ const supplySteps = [
 
 function SupplyChainSection() {
   return (
-    <section className="border-b border-slate-800 bg-slate-950 px-4 py-16">
+    <section className="border-b border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950 px-4 py-16">
       <div className="mx-auto max-w-7xl">
         <div className="text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-kalakaGold">
             SUPPLY CHAIN
           </p>
-          <h2 className="mt-3 text-3xl font-bold sm:text-4xl">
+          <h2 className="mt-3 text-3xl font-bold sm:text-4xl text-slate-900 dark:text-slate-100">
             Optimised Supply from Plant to Port to Farm
           </h2>
-          <p className="mx-auto mt-6 max-w-3xl text-lg text-slate-300">
+          <p className="mx-auto mt-6 max-w-3xl text-lg text-slate-600 dark:text-slate-300">
             Our integrated logistics network ensures timely, cost-effective delivery across
             Africa's most challenging routes.
           </p>
@@ -65,8 +65,8 @@ function SupplyChainSection() {
                 </div>
               </div>
               <div className="lg:col-span-5">
-                <h3 className="text-xl font-bold text-slate-100">{item.title}</h3>
-                <p className="mt-2 text-slate-400">{item.description}</p>
+                <h3 className="text-xl font-bold text-slate-900 dark:text-slate-100">{item.title}</h3>
+                <p className="mt-2 text-slate-600 dark:text-slate-400">{item.description}</p>
               </div>
               <div className="lg:col-span-6">
                 {item.image && (
@@ -83,9 +83,9 @@ function SupplyChainSection() {
           ))}
         </div>
 
-        <div className="mt-12 rounded-lg border border-kalakaGold/30 bg-kalakaPurple/20 p-6 text-center">
+        <div className="mt-12 rounded-lg border border-kalakaGold/30 bg-kalakaGold/10 p-6 text-center">
           <p className="text-sm font-semibold text-kalakaGold">CURRENT EXPORT ROUTES</p>
-          <p className="mt-2 text-slate-300">
+          <p className="mt-2 text-slate-700 dark:text-slate-300">
             Active deliveries into Zambia, Mozambique, and expanding across Southern and East Africa
           </p>
         </div>
